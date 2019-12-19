@@ -1,0 +1,14 @@
+service: slackbot
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  region: us-west-2
+
+functions:
+  slackbot:
+    handler: index.slackbotAction
+    events:
+      - http:
+          path: slackbot-action
+          method: post
