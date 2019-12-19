@@ -7,7 +7,7 @@ provider:
 
 functions:
   slackbot:
-    handler: index.slackbotAction
+    handler: index.handler
     events:
       - http:
           path: slackbot-action
