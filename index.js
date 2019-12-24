@@ -1,8 +1,13 @@
-exports.slackbotAction = async (event, context, callback) => {
-  console.log('event', event);
+exports.handler = async (event, context, callback) => {
+  console.log('event.body', event.body);
+
+  const challengeResponse = { challenge: event.body };
+
+  console.log(challengeResponse);
 
   callback(null, {
     statusCode: 200,
-    headers: { 'Content-Type': 'text/calendar' },
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(challengeResponse),
   });
 };
