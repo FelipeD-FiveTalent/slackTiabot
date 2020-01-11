@@ -1,7 +1,4 @@
-const fetch = require('node-fetch');
 const botResponse = require('./botResponse');
-
-const token = process.env.oAuthAccessToken;
 
 exports.handler = async (event, context, callback) => {
   console.log('event.body', event.body);

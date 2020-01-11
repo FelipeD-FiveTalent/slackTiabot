@@ -1,6 +1,6 @@
 const fetch = require('node-fetch');
 
-const token = process.env.oAuthAccessToken;
+const token = 'something';
 
 const botResponse = (channel, text) => {
   const url = 'https://slack.com/api/chat.postMessage';

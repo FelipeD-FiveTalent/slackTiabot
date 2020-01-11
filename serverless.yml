@@ -12,6 +12,3 @@ functions:
       - http:
           path: slackbot-action
           method: post
-    environment:
-      oAuthAccessToken : xoxp-742264173894-742271329814-883093660711-5ebe9e5f4a23e2c2685355944afb005a
-
